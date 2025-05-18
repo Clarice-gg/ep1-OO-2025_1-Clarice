@@ -9,10 +9,10 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Dados do Aluno
 
-- **Nome completo:** [Preencher aqui]
-- **Matrícula:** [Preencher aqui]
-- **Curso:** [Preencher aqui]
-- **Turma:** [Preencher aqui]
+- **Nome completo:** Clarice Gitirana Gusson
+- **Matrícula:** 242015791
+- **Curso:** Orientação a objetos
+- **Turma:**06
 
 ---
 
