@@ -12,7 +12,7 @@ O enunciado do trabalho pode ser encontrado aqui:
 - **Nome completo:** Clarice Gitirana Gusson
 - **Matrícula:** 242015791
 - **Curso:** Orientação a objetos
-- **Turma:**06
+- **Turma:** 06
 
 ---
 
