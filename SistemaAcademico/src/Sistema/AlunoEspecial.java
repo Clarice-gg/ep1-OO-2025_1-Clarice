@@ -1,14 +1,14 @@
 package Sistema;
 
-public class AlunoNormal extends Aluno{
+public class AlunoEspecial {
     private Integer disciplinas;
     private boolean recebeNota;
-
-    public AlunoNormal(){
-        this.disciplinas = 0;
-        this.recebeNota = true;
-    }
     
+    public AlunoEspecial(){
+        this.disciplinas = 0;
+        this.recebeNota = false;
+    }
+
     public Integer getDisciplinas(){
         return disciplinas;
     }
