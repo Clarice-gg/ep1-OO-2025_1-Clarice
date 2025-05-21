@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+import Sistema.Aluno;
+import Sistema.Disciplina;
+
 public class App {
     public static void main(String[] args){
         Scanner leitor = new Scanner(System.in);
@@ -9,7 +12,7 @@ public class App {
 
             //-------------------------MENU PRINCIPAL-------------------------
 
-            System.out.println("------------MENU------------\nSeja bem-vindo(a) ao mini Sigaa!");
+            System.out.println("------------MENU PRINCIPAL------------\nSeja bem-vindo(a) ao mini Sigaa!");
             System.out.println("Escolha uma das opções abaixo para prosseguir:\n");
             System.out.println("[1]Acessar como aluno");
             System.out.println("[2]Acessar como professor");
@@ -47,14 +50,66 @@ public class App {
     
     //-------------------------MENU DO ALUNO-------------------------
     public static void MenuAluno(){
-        System.out.println("Ainda em desenvolvimento...\n");
+        Scanner leitor = new Scanner(System.in);
+        int escolha;
+        //System.out.println("Ainda em desenvolvimento...\n");
+        while(true){
+            System.out.println("------------MENU ALUNO------------");
+            System.out.println("Olá aluno(a)!\nO que deseja fazer?\n");
+            System.out.println("[1] Cadastro no sistema");
+            System.out.println("[2] Matrícula em disciplina");
+            System.out.println("[3] Trancar disciplina/semestre");
+            System.out.println("[4] Salvar dados");
+            System.out.println("[5] Retornar ao menu principal\n");
+            
+            escolha = leitor.nextInt();
 
-        //Essa parte faz com que o programa espere 1 segundo para continuar a funcionar
-        try{
-            Thread.sleep(1000);
-        } catch (InterruptedException e){
-            e.printStackTrace();
+            switch(escolha){
+                case 1:
+                    Aluno.cadastrarAluno();
+                    break;
+
+                case 2:
+                    Disciplina.matriculaEmDisciplina();
+                    break;
+
+                case 3:
+                    System.out.println("O que deseja realizar?");
+                    System.out.println("[1] Trancamento geral");
+                    System.out.println("[2] Trancamento em uma disciplina");
+                    escolha = leitor.nextInt();
+                    if(escolha==1){
+                        //Aluno.setTrancarCurso(true); //deu erro (pq?)
+                        System.out.println("Trancamento realizado!\n");
+                        try{
+                            Thread.sleep(1000);
+                        } catch (InterruptedException e){
+                            e.printStackTrace();
+                        }
+                    }
+                    else if(escolha==2){
+
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("Desenvolvimento...");
+                    break;
+
+                case 5:
+                    System.out.println("Retornando ao menu principal, por favor aguarde...\n");
+                    try{
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                    return;
+
+                default:
+                    System.out.println("Escolha inválida!\nPor favor, tente novamente");
+            }
         }
+
     }
 
     //-------------------------MENU DO PROFESSOR-------------------------
