@@ -22,11 +22,11 @@ public class App {
 
             switch(escolha){
                 case 1:
-                    MenuAluno(); //redireciona para o menu aluno
+                    menuAluno(); //redireciona para o menu aluno
                     break;
             
                 case 2:
-                    MenuProfessor();
+                    menuProfessor();
                     break;
 
                 case 3:
@@ -49,9 +49,11 @@ public class App {
     }
     
     //-------------------------MENU DO ALUNO-------------------------
-    public static void MenuAluno(){
+
+    public static void menuAluno(){
         Scanner leitor = new Scanner(System.in);
         int escolha;
+        Aluno aluno = new Aluno();
         //System.out.println("Ainda em desenvolvimento...\n");
         while(true){
             System.out.println("------------MENU ALUNO------------");
@@ -66,7 +68,13 @@ public class App {
 
             switch(escolha){
                 case 1:
-                    Aluno.cadastrarAluno();
+                    aluno.cadastrarAluno();
+                    System.out.println("Cadastro realizado com sucesso!\n");
+                    try{
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
                     break;
 
                 case 2:
@@ -76,10 +84,10 @@ public class App {
                 case 3:
                     System.out.println("O que deseja realizar?");
                     System.out.println("[1] Trancamento geral");
-                    System.out.println("[2] Trancamento em uma disciplina");
+                    System.out.println("[2] Trancamento em uma disciplina\n");
                     escolha = leitor.nextInt();
                     if(escolha==1){
-                        //Aluno.setTrancarCurso(true); //deu erro (pq?)
+                        aluno.setTrancarCurso(true);
                         System.out.println("Trancamento realizado!\n");
                         try{
                             Thread.sleep(1000);
@@ -88,7 +96,7 @@ public class App {
                         }
                     }
                     else if(escolha==2){
-
+                        System.out.println("Qual disciplina deseja trancar?");
                     }
                     break;
 
@@ -103,6 +111,7 @@ public class App {
                     } catch (InterruptedException e){
                         e.printStackTrace();
                     }
+                    //leitor.close();
                     return;
 
                 default:
@@ -113,7 +122,7 @@ public class App {
     }
 
     //-------------------------MENU DO PROFESSOR-------------------------
-    public static void MenuProfessor(){
+    public static void menuProfessor(){
         System.out.println("Ainda em desenvolvimento...\n");
 
         try{
