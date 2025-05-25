@@ -1,5 +1,6 @@
 package Sistema;
 import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Aluno {
@@ -8,10 +9,15 @@ public class Aluno {
     private String curso;
     private boolean trancarCurso;
 
+    public Aluno(String nome, String curso, int matricula){
+        this.nome = nome;
+        this.curso = curso;
+        this.matricula = matricula;
+    }
     public Aluno(){
         this.nome = "nome";
-        this.matricula = 0;
         this.curso = "curso";
+        this.matricula = 0;
     }
 
     public String getNome(){
@@ -39,7 +45,10 @@ public class Aluno {
         this.trancarCurso = trCurso;
     }
 
+    private static ArrayList<Aluno> listaDeAlunos = new ArrayList<>();
+
     public void cadastrarAluno(){
+        
         Scanner leitor = new Scanner(System.in);
         String nome, curso;
         int ano, anoM, semestre;
@@ -75,9 +84,23 @@ public class Aluno {
         }
         setMatricula(matriculaCriada);
         System.out.println(matriculaCriada + "\n");
+        Aluno aluno = new Aluno(nome, curso, matriculaCriada);
+        listaDeAlunos.add(aluno);
     }
 
-    //---------------------LISTA DE ALUNOS (DADOS)--------------------
+    public ArrayList<Aluno> getListaAlunos(){
+        return listaDeAlunos;
+    }
 
+    @Override
+    public String toString(){
+        return "Nome: "+nome+" | Curso: "+curso+" | Matricula: "+matricula;
+    }
+
+    public static void mostarListaAlunos(){
+        for(Aluno aluno : listaDeAlunos){
+            System.out.println(aluno);
+        }
+    }
 
 }
