@@ -1,12 +1,14 @@
 package Sistema;
 
-public class AlunoEspecial {
-    private Integer disciplinas;
-    private boolean recebeNota;
+public class AlunoEspecial extends Aluno{
+    private Integer disciplinas=0;
     
     public AlunoEspecial(){
         this.disciplinas = 0;
-        this.recebeNota = false;
+    }
+    public AlunoEspecial(String nome, String curso, int matricula, int disciplinas){
+        super(nome, curso, matricula);
+        this.disciplinas = disciplinas;
     }
 
     public Integer getDisciplinas(){
@@ -15,10 +17,18 @@ public class AlunoEspecial {
     public void setDisciplinas(Integer disc){
         this.disciplinas = disc;
     }
-    public boolean getRecebeNota(){
-        return recebeNota;
+
+    public static boolean acharAlunoEspecial(String buscaAluno){
+        for(AlunoEspecial aluno : listaAlunosE){
+            if(aluno.getNome().equalsIgnoreCase(buscaAluno)){
+                aluno.setDisciplinas(aluno.disciplinas+=1);
+                return true;
+            }}
+        return false;
     }
-    public void setRecebeNota(boolean rNota){
-        this.recebeNota = rNota;
+
+    @Override
+    public String toString(){
+        return "Total de disciplinas matriculadas: "+disciplinas;
     }
 }
