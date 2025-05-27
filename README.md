@@ -47,16 +47,16 @@ O enunciado do trabalho pode ser encontrado aqui:
 ## Prints da Execução
 
 1. Menu Principal e Cadastro de Aluno:  
-   ![Inserir Print 1](caminho/do/print1.png)
+   ![Print 1](C:\Users\DANIELPIRESGUSSON\Pictures\Screenshots\Print_1.png)
 
 2. Menu Professor e Cadastro de Disciplina:  
-   ![Inserir Print 2](caminho/do/print2.png)
+   ![Print 2](caminho/do/print2.png)
 
 3. Lançamento de Notas:  
-   ![Inserir Print 3](caminho/do/print3.png)
+   ![Print 3](caminho/do/print3.png)
 
 4. Exemplo da Listagem de Disciplinas e Alunos no arquivo .txt:
-   ![Inserir Print 4](caminho/do/print4.png)
+   ![Print 4](caminho/do/print4.png)
 
 ---
 
