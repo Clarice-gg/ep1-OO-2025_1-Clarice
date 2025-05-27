@@ -47,16 +47,16 @@ O enunciado do trabalho pode ser encontrado aqui:
 ## Prints da Execução
 
 1. Menu Principal e Cadastro de Aluno:  
-   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 202105.png"
+
 
 2. Menu Professor e Cadastro de Disciplina:  
-   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 202307.png"
+
 
 3. Lançamento de Notas:  
-   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 203517.png"
+
 
 4. Exemplo da Listagem de Disciplinas e Alunos no arquivo .txt:
-   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 203034.png"
+
 
 ---
 
