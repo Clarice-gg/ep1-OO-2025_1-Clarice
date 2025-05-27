@@ -47,7 +47,7 @@ O enunciado do trabalho pode ser encontrado aqui:
 ## Prints da Execução
 
 1. Menu Principal e Cadastro de Aluno:  
-   ![Inserir Print 1](caminho/do/print1.png)
+   ![Inserir Print 1](C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 202105.png)
 
 2. Menu Professor e Cadastro de Disciplina:  
    ![Inserir Print 2](caminho/do/print1.png)
