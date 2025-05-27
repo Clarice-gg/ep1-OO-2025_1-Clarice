@@ -9,6 +9,9 @@ public class Aluno {
     private String curso;
     private boolean trancarCurso;
 
+    public Aluno(String nome){
+        this.nome = nome;
+    }
     public Aluno(String nome, String curso, int matricula){
         this.nome = nome;
         this.curso = curso;
@@ -45,7 +48,8 @@ public class Aluno {
         this.trancarCurso = trCurso;
     }
 
-    private static ArrayList<Aluno> listaDeAlunos = new ArrayList<>();
+    public static ArrayList<Aluno> listaDeAlunos = new ArrayList<>();
+    public static ArrayList<AlunoEspecial> listaAlunosE = new ArrayList<>();
 
     public void cadastrarAluno(){
         
@@ -86,6 +90,14 @@ public class Aluno {
         System.out.println(matriculaCriada + "\n");
         Aluno aluno = new Aluno(nome, curso, matriculaCriada);
         listaDeAlunos.add(aluno);
+        int escolha;
+
+        System.out.println("É um aluno especial? Digite 1 para sim e 2 para não");
+            escolha = leitor.nextInt();
+            if(escolha==1){
+                AlunoEspecial alunoE = new AlunoEspecial(nome, curso, matriculaCriada, 0);
+                listaAlunosE.add(alunoE);
+            }
     }
 
     public ArrayList<Aluno> getListaAlunos(){
@@ -103,4 +115,34 @@ public class Aluno {
         }
     }
 
+    public static boolean acharAluno(String buscaAluno){
+        for(Aluno aluno : listaDeAlunos){
+            if(aluno.getNome().equalsIgnoreCase(buscaAluno)){
+                return true;
+            }}
+        return false;
+    }
+
+    public static boolean acharAlunoTrancar(String buscaAluno){
+        for(Aluno aluno : listaDeAlunos){
+            if(aluno.getNome().equalsIgnoreCase(buscaAluno)){
+                aluno.setTrancarCurso(true);
+                return true;
+            }}
+        return false;
+    }
+    /*public static boolean acharAlunoNormal(String buscaAluno){
+        for(Aluno aluno : listaAlunosN){
+            if(aluno.getNome().equalsIgnoreCase(buscaAluno)){
+                return true;
+            }}
+        return false;
+    }
+    public static boolean acharAlunoEspecial(String buscaAluno){
+        for(Aluno aluno : listaAlunosE){
+            if(aluno.getNome().equalsIgnoreCase(buscaAluno)){
+                return true;
+            }}
+        return false;
+    }*/
 }
