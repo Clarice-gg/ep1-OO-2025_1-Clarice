@@ -23,7 +23,7 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 2. **Execução:**  
    java App
-   - Obs.: caso a compilação e execução não funcione de forma esperada, é possível utilizar a função 'run' já presente no começo da main (pois a versão 21 do java       permite esse "atalho"
+   - Obs.: caso a compilação e execução não funcione de forma esperada, é possível utilizar a função 'run' já presente no começo da main (pois a versão 21 do java       permite esse "atalho")
 
 4. **Estrutura de Pastas:**  
    - Aluno
@@ -46,17 +46,21 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 ## Prints da Execução
 
-1. Menu Principal e Cadastro de Aluno:  
-   ![Print 1](print1.png)
+1. Menu Principal e Cadastro de Aluno:
    
-3. Menu Professor e Cadastro de Disciplina:  
-   ![Print 2](print2.png)
+   ![Print_1](https://github.com/user-attachments/assets/3874b81f-f230-43bb-bcb7-22862b162a9d)
 
-4. Lançamento de Notas:  
-   ![Print 3](print3.png)
+2. Menu Professor e Cadastro de Disciplina:
+   
+   ![Captura de tela 2025-05-26 202307](https://github.com/user-attachments/assets/bc26b0ce-cf6a-4e9d-8408-2bc379d56f0e)
 
-5. Exemplo da Listagem de Disciplinas e Alunos no arquivo .txt:
-   ![Print 4](print4.png)
+3. Lançamento de Notas:
+   
+   ![Captura de tela 2025-05-26 203517](https://github.com/user-attachments/assets/806e52e9-5b34-49bf-8b0b-00bc7afaed3a)
+
+4. Exemplo da Listagem de Disciplinas e Alunos no arquivo .txt:
+   
+   ![Captura de tela 2025-05-26 203034](https://github.com/user-attachments/assets/d1aa95c2-574b-4a33-914f-c02726176240)
 
 ---
 
