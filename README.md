@@ -19,35 +19,44 @@ O enunciado do trabalho pode ser encontrado aqui:
 ## Instruções para Compilação e Execução
 
 1. **Compilação:**  
-   [Descrever aqui como compilar o projeto. Exemplo: `javac Main.java` ou o script usado]
+   javac App.java
 
 2. **Execução:**  
-   [Descrever aqui como executar o projeto. Exemplo: `java Main` ou o script usado]
+   java App
+   - Obs.: caso a compilação e execução não funcione de forma esperada, é possível utilizar a função 'run' já presente no começo da main (pois a versão 21 do java       permite esse "atalho"
 
-3. **Estrutura de Pastas:**  
-   [Descrever aqui as principais pastas do projeto]
+4. **Estrutura de Pastas:**  
+   - Aluno
+   - AlunoEspecial
+   - Disciplina
+   - Avaliação
+   - SalvarDados (para salvar em arquivos)
+   - App (main/principal)
 
 3. **Versão do JAVA utilizada:**  
-   [Descrever aqui como versão do JAVA utilizada no projeto. Sugestão: `java 21`]
+   java 21
 
 ---
 
 ## Vídeo de Demonstração
 
-- [Inserir o link para o vídeo no YouTube/Drive aqui]
+- https://drive.google.com/file/d/1WFynHXAtJgZKnJbCwese5023FH_FX83p/view?usp=drive_link
 
 ---
 
 ## Prints da Execução
 
-1. Menu Principal:  
-   ![Inserir Print 1](caminho/do/print1.png)
+1. Menu Principal e Cadastro de Aluno:  
+   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 202105.png"
 
-2. Cadastro de Aluno:  
-   ![Inserir Print 2](caminho/do/print2.png)
+2. Menu Professor e Cadastro de Disciplina:  
+   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 202307.png"
 
-3. Relatório de Frequência/Notas:  
-   ![Inserir Print 3](caminho/do/print3.png)
+3. Lançamento de Notas:  
+   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 203517.png"
+
+4. Exemplo da Listagem de Disciplinas e Alunos no arquivo .txt:
+   "C:\Users\DANIEL PIRES GUSSON\Pictures\Screenshots\Captura de tela 2025-05-26 203034.png"
 
 ---
 
@@ -55,22 +64,18 @@ O enunciado do trabalho pode ser encontrado aqui:
 
 - [ ] Cadastro, listagem, matrícula e trancamento de alunos (Normais e Especiais)
 - [ ] Cadastro de disciplinas e criação de turmas (presenciais e remotas)
-- [ ] Matrícula de alunos em turmas, respeitando vagas e pré-requisitos
-- [ ] Lançamento de notas e controle de presença
-- [ ] Cálculo de média final e verificação de aprovação/reprovação
-- [ ] Relatórios de desempenho acadêmico por aluno, turma e disciplina
-- [ ] Persistência de dados em arquivos (.txt ou .csv)
-- [ ] Tratamento de duplicidade de matrículas
+- [ ] Matrícula de alunos em turmas
+- [ ] Lançamento de notas
+- [ ] Cálculo de média final
+- [ ] Relatórios de desempenho acadêmico por aluno e disciplina
+- [ ] Persistência de dados em arquivos (.txt)
 - [ ] Uso de herança, polimorfismo e encapsulamento
 
 ---
 
 ## Observações (Extras ou Dificuldades)
 
-- [Espaço para o aluno comentar qualquer funcionalidade extra que implementou, dificuldades enfrentadas, ou considerações importantes.]
+- Criação de um método para criar as matrículas aleatoriamente, diminuindo o risco de uma matrícula repetida
+- Dificuldade em como listar cada aluno matriculado na respectiva disciplina
+- Dificuldade em como salvar os dados no formato de arquivo .txt
 
----
-
-## Contato
-
-- [Opcional: E-mail pessoal do aluno.]
